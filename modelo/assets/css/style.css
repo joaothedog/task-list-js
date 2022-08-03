@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: rgb(22, 136, 145);
+  --primary-color-darker: rgb(8, 55, 58);
+  --soft-green: rgb(83, 204, 83);
+  --red-delete: rgb(252, 82, 82);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+.container {
+  max-width: 375px;
+  margin: 100px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+p input, p label, p button {
+  /* width: 50%; */
+  margin-bottom: 10px;
+}
+
+p input {
+  height: 35px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+p input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+p button {
+  margin-top: 30px;
+  border:none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  height: 35px;
+  cursor: pointer;
+}
+
+p button:hover {
+  background: var(--primary-color-darker);
+}
+
+p button:active {
+  background: var(--soft-green);
+}
+
+.div-lista{
+ display: flex;
+ justify-content: flex-start;
+}
+
+.btn-del {
+  margin-top: 5px;
+  border-radius: 3px;
+  border:none;
+  background: var(--red-delete);
+  color: #fff;
+  font-size: 18px;
+  height: 30px;
+  cursor: pointer;
+}
